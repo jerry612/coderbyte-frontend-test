@@ -1,0 +1,55 @@
+.device-card {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  box-shadow: 0 10px 6px -6px #777;
+
+  &__avatar-container {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+  }
+
+  &__middle-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+
+    .title {
+      width: fit-content;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .model-number {
+      width: fit-content;
+      font-size: 20px;
+      flex: 1;
+    }
+
+    .switch {
+      width: fit-content;
+    }
+  }
+
+  &__lock-status {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+
+    & * {
+      margin: auto;
+    }
+  }
+}
+
+.MuiAvatar-root {
+  width: 90px !important;
+  height: 90px !important;
+}
